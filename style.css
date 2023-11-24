@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
 }
 :root {
     --Moderate-cyan: hsl(176, 50%, 47%);
@@ -13,6 +14,7 @@
 
 header {
     background-image: url("images/image-hero-desktop.jpg");
+    background-attachment: fixed;
 }
 
 nav {
@@ -28,6 +30,7 @@ nav {
 
 .nav-row p {
     color: white;
+    cursor: pointer;
 }
 
 
@@ -40,10 +43,18 @@ main {
 
 .text-align {
     text-align: center;
+    margin-top: -80px;
+}
+
+.logo-m {
+    width: 52px;
+    margin: auto;
+    margin-top: -66px;
+
 }
 
 .box-container {
-    width: 1000px;
+    width: 755px;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
@@ -119,5 +130,16 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+}
+
+.flex-row p {
+    color: var(--Moderate-cyan);
+    font-weight: 500;
+}
+
+span {
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: 15px;
 }
 
