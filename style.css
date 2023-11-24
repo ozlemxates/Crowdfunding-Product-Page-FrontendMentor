@@ -103,11 +103,10 @@ main {
 
 .btn-out {
     cursor:not-allowed;
-    
+    color: white;
 }
 
 .bookmark:hover {
-    background-color: var(--Dark-gray);
     color: var(--Dark-cyan);
 
 }
@@ -170,3 +169,7 @@ span {
     font-size: 15px;
 }
 
+.box-out {
+    opacity: 0.5; 
+    filter: grayscale(100%);     
+}
