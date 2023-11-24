@@ -33,7 +33,6 @@ nav {
     cursor: pointer;
 }
 
-
 main {
     background-color: var(--bg);
     display: flex;
@@ -76,8 +75,6 @@ main {
 }
 
 .btn {
-    color: white;
-    background-color: var(--Moderate-cyan);
     padding: 15px 20px;
     border-radius: 33px;
     border: 0;
@@ -85,7 +82,37 @@ main {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn-cyan {
+    background-color: var(--Moderate-cyan);
+    color: white;
+}
+
+.bookmark {
+    background-color: var(--bg);
+    position: relative; 
+    padding-left: 62px; 
+}
+
+.bookmark img {
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.btn-out {
+    cursor:not-allowed;
+    
+}
+
+.bookmark:hover {
+    background-color: var(--Dark-gray);
+    color: var(--Dark-cyan);
+
+}
+
+.btn-cyan:hover {
     background-color: var(--Dark-cyan);
 }
 
