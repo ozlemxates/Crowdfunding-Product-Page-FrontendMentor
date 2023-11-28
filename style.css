@@ -197,9 +197,14 @@ span {
     align-items: center;
 }
   
-.checkmark {
+.check {
     flex-shrink: 0; 
     margin-right: 15px; 
+}
+
+.check input {
+    outline: none;
+    border: 0;
 }
   
 input {
