@@ -6,23 +6,34 @@ const showModalButtons = document.querySelectorAll('.showReward');
 const continueButtons = document.querySelectorAll('.continue-btn');
 const gotIt = document.getElementById('gotIt');
 const modalSuccess = document.getElementById('mySuccessModal');
+const container = document.querySelector('.box-container');
+const header = document.querySelector('header');
 
 showModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     modal.style.display = 'block';
+    container.classList.add('grayscale');
+    header.classList.add('grayscale');
   });
 });
 
 closeButton.addEventListener('click', () => {
   modal.style.display = 'none';
+  container.classList.remove('grayscale');
+  header.classList.remove('grayscale');
 });
 
 continueButtons.forEach (button => {
     button.addEventListener('click', () => {
+        modal.style.display = 'none';
         modalSuccess.style.display = 'block';
+        container.classList.add('grayscale');
+        header.classList.add('grayscale');
     })
 });
 
 gotIt.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modalSuccess.style.display = 'none';
+    container.classList.remove('grayscale');
+    header.classList.remove('grayscale');
 });

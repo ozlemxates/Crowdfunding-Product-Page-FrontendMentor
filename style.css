@@ -13,6 +13,12 @@
     --Dark-gray: hsl(0, 0%, 48%)
 }
 
+.grayscale {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
 header {
     background-image: url("images/image-hero-desktop.jpg");
     background-attachment: fixed;
@@ -184,11 +190,27 @@ span {
     margin-bottom: 12px;
 }
 
-
 /* my modal start */
+
+.show-modal {
+    display: block;
+}
+
 
 #myModal {
     display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-top: -300px;
+}
+
+.modal-content {
+    width: 700px;
+    height: 600px;
+    overflow: scroll;
+    margin: auto;
 }
 
 .flex-modal {
@@ -236,6 +258,11 @@ input {
 
 #mySuccessModal {
     display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-top: -300px;
 }
 
 .success-modal {
@@ -244,6 +271,7 @@ input {
     width: 500px;
     border-radius: 10px;
     padding: 20px 40px;
+    margin: auto;
 }
 
 .success-modal img {
