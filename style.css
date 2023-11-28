@@ -62,7 +62,6 @@ main {
     width: 52px;
     margin: auto;
     margin-top: -66px;
-
 }
 
 .box-container {
@@ -71,6 +70,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 .box {
@@ -280,4 +280,15 @@ input {
 
 .success-modal p {
     margin: 20px 40px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    background-color: var(--bg);
+    padding-bottom: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
