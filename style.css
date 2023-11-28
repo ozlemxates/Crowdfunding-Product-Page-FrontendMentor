@@ -32,6 +32,12 @@ nav {
 .nav-row p {
     color: white;
     cursor: pointer;
+    transition: 500ms;
+}
+
+.nav-row p:hover {
+    transform: scale(1.2);
+
 }
 
 main {
@@ -173,4 +179,50 @@ span {
 .box-out {
     opacity: 0.5; 
     filter: grayscale(100%);     
+}
+
+.content p {
+    margin-bottom: 12px;
+}
+
+
+/* my modal start */
+
+.selection-modal {
+    width: 800px;
+}
+
+.card-modal {
+    display: flex;
+    align-items: center;
+}
+  
+.checkmark {
+    flex-shrink: 0; 
+    margin-right: 15px; 
+}
+  
+input {
+    width: 63px;
+    border-radius: 19px;
+    height: 29px;
+    border: 1px solid var(--bg);
+    padding: 9px;
+}
+
+/* success modal  */
+.success-modal {
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.success-modal img {
+    margin: 10px;
+}
+
+.success-modal p {
+    margin: 20px 40px;
 }
