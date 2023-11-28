@@ -229,7 +229,7 @@ span {
   
 .check {
     flex-shrink: 0; 
-    margin-right: 15px; 
+    margin:0 5px 0 -38px; 
 }
 
 .check input {
