@@ -115,7 +115,6 @@ main {
 
 .bookmark:hover {
     color: var(--Dark-cyan);
-
 }
 
 .btn-cyan:hover {
@@ -188,6 +187,15 @@ span {
 
 /* my modal start */
 
+#myModal {
+    display: none;
+}
+
+.flex-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
 .selection-modal {
     width: 800px;
 }
@@ -215,7 +223,21 @@ input {
     padding: 9px;
 }
 
+.close {
+    font-size:32px ;
+}
+
+.close:hover {
+    color: var(--Dark-cyan);
+
+}
+
 /* success modal  */
+
+#mySuccessModal {
+    display: none;
+}
+
 .success-modal {
     text-align: center;
     background-color: white;

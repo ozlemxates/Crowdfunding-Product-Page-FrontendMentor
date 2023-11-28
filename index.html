@@ -72,7 +72,7 @@
           <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
           <div class="flex-row">
             <h2>101 <span>left</span></h2>
-            <button class="btn btn-cyan"> Select Reward</button>
+            <button id="selectReward1" class="btn btn-cyan showReward"> Select Reward</button>
           </div>  
         </div>
         <div class="card">
@@ -83,7 +83,7 @@
           <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
           <div class="flex-row">
             <h2>64 <span>left</span></h2>
-            <button class="btn btn-cyan"> Select Reward</button>
+            <button class="btn btn-cyan showReward"> Select Reward</button>
           </div>  
         </div>
         <div class="card box-out">
@@ -94,22 +94,20 @@
           <p> You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
           <div class="flex-row">
             <h2>0 <span>left</span></h2>
-            <button class="btn btn-out"> Out of Stock</button>
+            <button id="selectReward2" class="btn btn-out"> Out of Stock</button>
           </div>  
         </div>
       </div>
       <!-- third box -->
     </div>
-
     <!-- selection modal start -->
     <div id="myModal" class="selection-modal">
       <div class="modal-content box">
-        <div class="flex-row">
+        <div class="flex-modal">
           <h2>Back this project</h2>
           <span class="close">&times;</span>
         </div>
         <p> Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-  
         <div class="card card-modal">
           <div class="check">
             <label for="">
@@ -121,6 +119,14 @@
               <h3> Pledge with no reward</h3>
             </div>
             <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
+            <hr>
+          <div class="flex-row">
+            <p>Enter your pledge </p>
+            <div class="form">
+              <input type="number" placeholder="$25">
+              <button class="btn btn-cyan continue-btn">Continue</button>
+            </div>
+          </div>
           </div>
         </div>
         <div class="card">
@@ -138,14 +144,14 @@
               </div>
               <p>  
                 You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
-            </div>
-          </div>
-          <hr>
-          <div class="flex-row">
-            <p>Enter your pledge </p>
-            <div class="form">
-              <input type="number" placeholder="$25">
-              <button class="btn btn-cyan">Continue</button>
+                <hr>
+                <div class="flex-row">
+                  <p>Enter your pledge </p>
+                  <div class="form">
+                    <input type="number" placeholder="$25">
+                    <button class="btn btn-cyan continue-btn">Continue</button>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -163,15 +169,15 @@
                 <h2>64 <span>left</span></h2>
               </div>
               <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+              <hr>
+              <div class="flex-row">
+                <p>Enter your pledge </p>
+                <div class="form">
+                  <input type="number" placeholder="$75">
+                  <button class="btn btn-cyan continue-btn">Continue</button>
+                </div>
             </div>
           </div>
-          <hr>
-          <div class="flex-row">
-            <p>Enter your pledge </p>
-            <div class="form">
-              <input type="number" placeholder="$75">
-              <button class="btn btn-cyan">Continue</button>
-            </div>
           </div>
         </div>
         <div class="card box-out card-modal">
@@ -192,8 +198,6 @@
       </div>
     </div> 
     <!-- selection modal end -->
-
-
     <!-- success modal start -->
     <div id="mySuccessModal" class="modal">
       <div class="success-modal">
@@ -201,7 +205,7 @@
             <img src="images/icon-check.svg" alt="">
             <h1>Thanks for your support!</h1>
             <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
-            <button class="btn btn-cyan">Got it!</button>
+            <button id="gotIt" class="btn btn-cyan">Got it!</button>
           </div>
       </div>
     </div>
