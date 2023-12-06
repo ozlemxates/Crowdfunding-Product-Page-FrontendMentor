@@ -100,24 +100,42 @@ main {
     color: white;
 }
 
+/* bookmark start */
+
 .bookmark {
     background-color: var(--bg);
     position: relative; 
     padding-left: 62px; 
+    transition: background-color 0.5s ease;
+}
+
+.bookmark:hover {
+    color: var(--Dark-cyan);
 }
 
 .bookmark.active {
     background-color: var(--Moderate-cyan);
+    color: transparent;
+    transition-delay: 0.2s; 
+    text-align: left;
+    background-position: 0%;
+}
+
+.bookmark.active::after {
+    content: "Bookmark";
+    position: absolute;
     color: white;
+    left: 29px; 
+    white-space: nowrap;
+    transition: left 0.5s ease;
 }
 
 .bookmark img {
     position: absolute;
     width: 45px;
     left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
+    top: 0;
+    transition: transform 0.5s ease;
 } 
 
 .bookmark img.active {
@@ -125,13 +143,11 @@ main {
     top: 1px;
 }
 
+/* bookmark end */
+
 .btn-out {
     cursor:not-allowed;
     color: white;
-}
-
-.bookmark:hover {
-    color: var(--Dark-cyan);
 }
 
 .btn-cyan:hover {
