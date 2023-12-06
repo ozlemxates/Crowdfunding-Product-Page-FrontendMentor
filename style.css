@@ -106,13 +106,24 @@ main {
     padding-left: 62px; 
 }
 
+.bookmark.active {
+    background-color: var(--Moderate-cyan);
+    color: white;
+}
+
 .bookmark img {
     position: absolute;
-    width: 50px;
+    width: 45px;
     left: 0px;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 0.3s ease;
 } 
+
+.bookmark img.active {
+    transform: translateX(102px);
+    top: 1px;
+}
 
 .btn-out {
     cursor:not-allowed;

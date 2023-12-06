@@ -37,3 +37,11 @@ gotIt.addEventListener('click', () => {
     container.classList.remove('grayscale');
     header.classList.remove('grayscale');
 });
+
+const bookmark = document.querySelector('.btn.bookmark');
+const bookmarkImg = document.querySelector('.bookmark img');
+
+bookmark.addEventListener('click', function() {
+  bookmarkImg.classList.toggle('active');
+  this.classList.toggle('active');
+});
