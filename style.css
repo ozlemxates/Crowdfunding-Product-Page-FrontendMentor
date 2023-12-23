@@ -316,7 +316,14 @@ input {
 
 .close:hover {
     color: var(--Dark-cyan);
+}
 
+.card-animation {
+    transition: transform 0.3s ease;
+}
+  
+.card-animation:hover {
+    transform: scale(1.05);
 }
 
 /* success modal  */
