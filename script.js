@@ -46,20 +46,20 @@ bookmark.addEventListener('click', function() {
   this.classList.toggle('active');
 });
 
-const radioChecks = document.querySelectorAll('.radio-checkmark');
+const checkmarks = document.querySelectorAll('.check-on');
 const displayDivs = document.querySelectorAll('.flex-row.display-none');
-const checkmark1 = document.getElementsByName('check1');
-const checkmark2 = document.getElementsByName('check2');
-const checkmark3 = document.getElementsByName('check3');
-const checkmark4 = document.getElementsByName('check4');
 
-radioChecks.forEach((radio, index) => {
-  radio.addEventListener('change', () => {
-    displayDivs.forEach(div => {
-      div.style.display = 'none';
-    });
-    if (radio.checked) {
+checkmarks.forEach((checkmark, index) => {
+  checkmark.addEventListener('click', function() {
+    if (!this.classList.contains('active')) {
+      checkmarks.forEach(mark => mark.classList.remove('active'));
+      displayDivs.forEach(div => div.style.display = 'none');
+    }
+    this.classList.toggle('active');
+    if (this.classList.contains('active')) {
       displayDivs[index].style.display = 'flex';
+    } else {
+      displayDivs[index].style.display = 'none';
     }
   });
 });
