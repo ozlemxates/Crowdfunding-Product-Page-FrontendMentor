@@ -45,3 +45,21 @@ bookmark.addEventListener('click', function() {
   bookmarkImg.classList.toggle('active');
   this.classList.toggle('active');
 });
+
+const radioChecks = document.querySelectorAll('.radio-checkmark');
+const displayDivs = document.querySelectorAll('.flex-row.display-none');
+const checkmark1 = document.getElementsByName('check1');
+const checkmark2 = document.getElementsByName('check2');
+const checkmark3 = document.getElementsByName('check3');
+const checkmark4 = document.getElementsByName('check4');
+
+radioChecks.forEach((radio, index) => {
+  radio.addEventListener('change', () => {
+    displayDivs.forEach(div => {
+      div.style.display = 'none';
+    });
+    if (radio.checked) {
+      displayDivs[index].style.display = 'flex';
+    }
+  });
+});
