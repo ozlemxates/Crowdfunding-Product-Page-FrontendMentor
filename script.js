@@ -63,3 +63,19 @@ checkmarks.forEach((checkmark, index) => {
     }
   });
 });
+
+const scrollButton = document.getElementById('scrollButton');
+
+if (scrollButton) {
+  scrollButton.addEventListener('click', () => {
+    const scrollSection = document.getElementById('scrollSection');
+    if (scrollSection) {
+      const offsetTop = scrollSection.offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+}
