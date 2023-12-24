@@ -65,7 +65,6 @@ checkmarks.forEach((checkmark, index) => {
 });
 
 const scrollButton = document.getElementById('scrollButton');
-
 if (scrollButton) {
   scrollButton.addEventListener('click', () => {
     const scrollSection = document.getElementById('scrollSection');
@@ -79,3 +78,14 @@ if (scrollButton) {
     }
   });
 }
+
+const pledgeInputs = document.querySelectorAll('.form input[type="number"]');
+
+pledgeInputs.forEach(input => {
+  input.addEventListener('input', function() {
+    const inputValue = parseInt(this.value);
+    if (inputValue < 0) {
+      this.value = '';
+    }
+  });
+});
