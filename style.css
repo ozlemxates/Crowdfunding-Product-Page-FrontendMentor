@@ -368,3 +368,13 @@ input {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 756px) {
+    body {
+        width: fit-content;
+    }
+
+    header {
+        background-image: url("images/image-hero-mobile.jpg");
+    }
+}
